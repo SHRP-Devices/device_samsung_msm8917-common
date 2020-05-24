@@ -74,3 +74,25 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_CRYPTO_USE_SYSTEM_VOLD := true
 TW_INCLUDE_NTFS_3G := true
 TW_USE_TOOLBOX := true
+
+# SHRP flags
+# Maintainer name
+SHRP_MAINTAINER := SebaUbuntu
+# put this 0 if device has no EDL mode
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sdcard
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb-otg
+# Put 0 to disable flashlight
+SHRP_FLASH := 1
+# Check your device's recovery path, dont use blindly
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+# Use this flag only if your device is A/B
+SHRP_AB := false
+# Recovery Type (It can be treble,normal,SAR) [Only for About Section]
+SHRP_REC_TYPE := Treble
+# Recovery Type (It can be A/B or A_only) [Only for About Section]
+SHRP_DEVICE_TYPE := A_Only
+SHRP_EXPRESS := true
+SHRP_OFFICIAL := true
+SHRP_DARK := true
